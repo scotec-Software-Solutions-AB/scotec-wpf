@@ -1,0 +1,13 @@
+name: Build & Deploy
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - template: Build.yml
+    - name: Push project
+      run: dotnet nuget push Source/Scotec.ILMerge.MSBuild.Task/**/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate

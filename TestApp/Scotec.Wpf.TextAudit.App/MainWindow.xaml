@@ -1,0 +1,35 @@
+﻿<Window x:Class="Scotec.Wpf.TextAudit.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:a="clr-namespace:Scotec.Wpf.TextAudit;assembly=Scotec.Wpf.TextAudit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+
+    <Window.Resources>
+
+        <a:HexTextAudit x:Key="HexTextBoxAudit" IsLowerCase="True" />
+
+    </Window.Resources>
+
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Value:" Margin="0,0,10,0"/>
+
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="AuditTextBox" Width="200" HorizontalAlignment="Left"
+                 a:TextAudit.Audit="{StaticResource HexTextBoxAudit}" />
+
+        <Button Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Left" Margin ="0,15,0,0" Content="OK"
+                IsEnabled="{Binding ElementName=AuditTextBox, Path=(a:TextAudit.IsValid)}" />
+    </Grid>
+</Window>

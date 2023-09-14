@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-windows;net462</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>$(CompanyName)</Authors>
+		<Company>$(CompanyName)</Company>
+		<Copyright>$(CompanyName)</Copyright>
+		<Description></Description>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<IsPublishable>False</IsPublishable>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://www.scotec-software.com</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<RepositoryUrl>https://github.com/scotec-Software-Solutions-AB/Scotec-ILMerge-MSBuild-Task</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<SignAssembly>False</SignAssembly>
+		<Title>Scotec.ILMerge.MSBuild.Task</Title>
+		<PackageTags>scotec;ILMerge;MSBuild;build task</PackageTags>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\images\icon.png" Pack="true" PackagePath="" />
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+		<!--<None Include="_._" Pack="true" PackagePath="lib\net472" />-->
+		<!-- <Content Include="..\..\..\license.txt" Link="license.txt" Pack="true" PackagePath="license.txt"/> -->
+		<!--<None Include="$(TargetDir)*.dll" Exclude="$(TargetPath)" Pack="true" PackagePath="tools" />-->
+	</ItemGroup>
+
+</Project>

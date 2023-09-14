@@ -31,4 +31,4 @@ jobs:
     - name: Pack
       run: dotnet pack --no-restore --no-build ./Source/Scotec.Wpf.sln -c Release -p:Version=$GITVERSION_ASSEMBLYSEMVER -p:PackageVersion=$GITVERSION_SEMVER -p:CompanyName="scotec Software Solutions AB"
     - name: Push project
-      run: dotnet nuget push Source/Scotec.ILMerge.MSBuild.Task/**/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate
+      run: dotnet nuget push Source/**/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate

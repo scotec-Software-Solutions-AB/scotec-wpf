@@ -9,7 +9,7 @@
 
     <Window.Resources>
 
-        <a:HexTextAudit x:Key="HexTextBoxAudit" IsLowerCase="True" />
+        <a:UInt32TextAudit x:Key="TextBoxAuditKey" />
 
     </Window.Resources>
 
@@ -20,16 +20,16 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="Value:" Margin="0,0,10,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Value:" Margin="0,0,10,0" />
 
         <TextBox Grid.Row="0" Grid.Column="1" x:Name="AuditTextBox" Width="200" HorizontalAlignment="Left"
-                 a:TextAudit.Audit="{StaticResource HexTextBoxAudit}" />
+                 a:TextAudit.Audit="{StaticResource TextBoxAuditKey}" />
 
-        <Button Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Left" Margin ="0,15,0,0" Content="OK"
+        <Button Grid.Row="1" Grid.Column="1" Width="100" HorizontalAlignment="Left" Margin="0,15,0,0" Content="OK"
                 IsEnabled="{Binding ElementName=AuditTextBox, Path=(a:TextAudit.IsValid)}" />
     </Grid>
 </Window>

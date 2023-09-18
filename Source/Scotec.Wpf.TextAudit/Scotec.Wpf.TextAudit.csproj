@@ -22,8 +22,8 @@
 		<RepositoryUrl>https://github.com/scotec-Software-Solutions-AB/scotec-wpf</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<SignAssembly>False</SignAssembly>
-		<Title>Scotec.ILMerge.MSBuild.Task</Title>
-		<PackageTags>scotec;ILMerge;MSBuild;build task</PackageTags>
+		<Title>Scotec.Wpf.TextAudit</Title>
+		<PackageTags>scotec;WPF;XAML</PackageTags>
 	</PropertyGroup>
 
 	<PropertyGroup>

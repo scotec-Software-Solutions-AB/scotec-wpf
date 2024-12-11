@@ -4,9 +4,9 @@ namespace Scotec.Wpf;
 
 public static class ViewModelExtensions
 {
-    public static IServiceCollection AddDataTemplateSelector(this IServiceCollection services)
+    public static IServiceCollection AddViewModelTemplateSelector(this IServiceCollection services)
     {
-        return services.AddSingleton<GlobalViewModelTemplateSelector>()
+        return services.ActivateSingleton<GlobalViewModelTemplateSelector>()
                        .AddTransient<ViewModelTemplateSelector>();
     }
 }

@@ -12,13 +12,13 @@ namespace Scotec.Wpf;
 
 public class ViewModelTemplateSelector : DataTemplateSelector
 {
-    private readonly GlobalViewModelTemplateSelector? _globalDataTemplateSelector;
+    private readonly GlobalViewModelTemplateSelector? _globalViewModelTemplateSelector;
     private readonly Dictionary<Type, Type> _registry = new();
 
     public ViewModelTemplateSelector(IEnumerable<IViewModelDescriptor> viewModelDescriptors,
-                                               GlobalViewModelTemplateSelector? globalDataTemplateSelector)
+                                               GlobalViewModelTemplateSelector? globalViewModelTemplateSelector)
     {
-        _globalDataTemplateSelector = globalDataTemplateSelector;
+        _globalViewModelTemplateSelector = globalViewModelTemplateSelector;
         Register(viewModelDescriptors);
     }
 
@@ -57,6 +57,6 @@ public class ViewModelTemplateSelector : DataTemplateSelector
             }
         }
 
-        return view != null ? new ViewModelTemplateWrapper(view) : _globalDataTemplateSelector?.SelectTemplate(item, container);
+        return view != null ? new ViewModelTemplateWrapper(view) : _globalViewModelTemplateSelector?.SelectTemplate(item, container);
     }
 }

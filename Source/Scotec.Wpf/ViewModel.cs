@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Scotec.Wpf
+namespace Scotec.Wpf;
+
+public class ViewModel : ObservableObject
 {
+    private DataTemplateSelector? _dataTemplateSelector;
 
-    public class ViewModel : ObservableObject
+    public DataTemplateSelector? DataTemplateSelector
     {
-        private readonly ViewModelTemplateSelector? _templateSelector;
-
-        public DataTemplateSelector? DataTemplateSelector => _templateSelector;
-
+        get => _dataTemplateSelector ?? GlobalViewModelTemplateSelector.DataTemplateSelector;
+        set => _dataTemplateSelector = value;
     }
 }

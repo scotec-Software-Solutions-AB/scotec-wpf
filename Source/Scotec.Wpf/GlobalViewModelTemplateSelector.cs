@@ -15,8 +15,8 @@ public sealed class GlobalViewModelTemplateSelector : ViewModelTemplateSelector
     public GlobalViewModelTemplateSelector(IEnumerable<IViewModelDescriptor> viewModelDescriptors)
     : base(viewModelDescriptors, null)
     {
-        GlobalDataTemplateSelector = this;
+        DataTemplateSelector = this;
     }
 
-    public static DataTemplateSelector? GlobalDataTemplateSelector { get; private set; } 
+    public static DataTemplateSelector? DataTemplateSelector { get; private set; } 
 }

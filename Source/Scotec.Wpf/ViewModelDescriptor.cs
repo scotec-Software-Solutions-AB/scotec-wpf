@@ -1,9 +1,8 @@
 ﻿using System;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Scotec.Wpf;
 
-public class ViewModelDescriptor<TViewModel, TView> : IViewModelDescriptor where TViewModel : ObservableObject
+public class ViewModelDescriptor<TViewModel, TView> : IViewModelDescriptor where TViewModel : ViewModel
 {
     #region IViewModelDescriptor Members
 

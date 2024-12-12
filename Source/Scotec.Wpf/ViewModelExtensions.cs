@@ -6,7 +6,7 @@ public static class ViewModelExtensions
 {
     public static IServiceCollection AddViewModelTemplateSelector(this IServiceCollection services)
     {
-        return services.ActivateSingleton<GlobalViewModelTemplateSelector>()
+        return services.AddActivatedSingleton<GlobalViewModelTemplateSelector>()
                        .AddTransient<ViewModelTemplateSelector>();
     }
 }

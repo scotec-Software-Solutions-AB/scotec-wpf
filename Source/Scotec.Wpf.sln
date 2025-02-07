@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scotec.Wpf.TextAudit", "Sco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scotec.Wpf", "Scotec.Wpf\Scotec.Wpf.csproj", "{BF3146C0-121E-48C4-B458-2EC771F8CCBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scotec.Wpf.Controls", "Scotec.Wpf.Controls\Scotec.Wpf.Controls.csproj", "{083FE5A0-CCA5-44E3-A1BB-A2432C75CC6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF3146C0-121E-48C4-B458-2EC771F8CCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF3146C0-121E-48C4-B458-2EC771F8CCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3146C0-121E-48C4-B458-2EC771F8CCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083FE5A0-CCA5-44E3-A1BB-A2432C75CC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083FE5A0-CCA5-44E3-A1BB-A2432C75CC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083FE5A0-CCA5-44E3-A1BB-A2432C75CC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083FE5A0-CCA5-44E3-A1BB-A2432C75CC6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

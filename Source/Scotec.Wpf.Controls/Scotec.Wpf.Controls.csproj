@@ -13,4 +13,8 @@
 		<Title>Scotec.Wpf.Controls</Title>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Scotec.Wpf\Scotec.Wpf.csproj" />
+	</ItemGroup>
+
 </Project>

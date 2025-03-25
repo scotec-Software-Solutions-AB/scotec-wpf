@@ -39,7 +39,7 @@ public class ExtendedTextBox : TextBox
             typeof(string),
             typeof(ExtendedTextBox),
             new PropertyMetadata(string.Empty));
-    
+
     // Dependency property for ButtonImageSource
     public static readonly DependencyProperty ImageSourceProperty =
         DependencyProperty.Register(
@@ -55,8 +55,6 @@ public class ExtendedTextBox : TextBox
             typeof(string),
             typeof(ExtendedTextBox),
             new PropertyMetadata(string.Empty));
-
-
 
     // Dependency property for WatermarkForeground
     public static readonly DependencyProperty WatermarkForegroundProperty =

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-windows</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<EnableWindowsTargeting>True</EnableWindowsTargeting>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Description></Description>
+		<Title>Scotec.Wpf</Title>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.AutoActivation" Version="8.10.0" />
+	  <PackageReference Include="Scotec.Extensions.Linq" Version="1.0.4" />
+	</ItemGroup>
+
+</Project>

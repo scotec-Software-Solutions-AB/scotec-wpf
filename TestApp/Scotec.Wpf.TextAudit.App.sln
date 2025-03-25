@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scotec.Wpf.TextAudit.App", "Scotec.Wpf.TextAudit.App\Scotec.Wpf.TextAudit.App.csproj", "{1EDF7869-3F11-4776-9A58-65B227F7BEDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scotec.Wpf.TextAudit", "..\Source\Scotec.Wpf.TextAudit\Scotec.Wpf.TextAudit.csproj", "{0F23EC33-B926-470A-AD51-2598ECD0DFA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EDF7869-3F11-4776-9A58-65B227F7BEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDF7869-3F11-4776-9A58-65B227F7BEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDF7869-3F11-4776-9A58-65B227F7BEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDF7869-3F11-4776-9A58-65B227F7BEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F23EC33-B926-470A-AD51-2598ECD0DFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F23EC33-B926-470A-AD51-2598ECD0DFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F23EC33-B926-470A-AD51-2598ECD0DFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F23EC33-B926-470A-AD51-2598ECD0DFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB249748-CC4B-4F36-9F4D-AAA94B464157}
+	EndGlobalSection
+EndGlobal

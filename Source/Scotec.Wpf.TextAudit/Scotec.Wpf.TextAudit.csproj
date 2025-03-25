@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-windows</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<EnableWindowsTargeting>True</EnableWindowsTargeting>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Description></Description>
+		<Title>Scotec.Wpf.TextAudit</Title>
+	</PropertyGroup>
+
+</Project>

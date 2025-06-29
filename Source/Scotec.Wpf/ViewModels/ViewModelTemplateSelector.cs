@@ -8,7 +8,7 @@ using Scotec.Extensions.Linq;
 
 #endregion
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 public class ViewModelTemplateSelector : DataTemplateSelector
 {
@@ -16,7 +16,7 @@ public class ViewModelTemplateSelector : DataTemplateSelector
     private readonly Dictionary<Type, Type> _registry = new();
 
     public ViewModelTemplateSelector(IEnumerable<IViewModelDescriptor> viewModelDescriptors,
-                                               GlobalViewModelTemplateSelector? globalViewModelTemplateSelector)
+                                     GlobalViewModelTemplateSelector? globalViewModelTemplateSelector)
     {
         _globalViewModelTemplateSelector = globalViewModelTemplateSelector;
         Register(viewModelDescriptors);

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 public static class ViewModelExtensions
 {

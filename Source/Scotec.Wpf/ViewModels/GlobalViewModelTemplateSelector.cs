@@ -1,22 +1,19 @@
 ﻿#region
 
-using System;
 using System.Collections.Generic;
-using System.Windows;
 using System.Windows.Controls;
-using Scotec.Extensions.Linq;
 
 #endregion
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 public sealed class GlobalViewModelTemplateSelector : ViewModelTemplateSelector
 {
     public GlobalViewModelTemplateSelector(IEnumerable<IViewModelDescriptor> viewModelDescriptors)
-    : base(viewModelDescriptors, null)
+        : base(viewModelDescriptors, null)
     {
         DataTemplateSelector = this;
     }
 
-    public static DataTemplateSelector? DataTemplateSelector { get; private set; } 
+    public static DataTemplateSelector? DataTemplateSelector { get; private set; }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 public class ViewModelTemplateWrapper : DataTemplate
 {

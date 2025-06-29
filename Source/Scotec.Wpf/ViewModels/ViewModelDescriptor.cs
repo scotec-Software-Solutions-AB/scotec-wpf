@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 public class ViewModelDescriptor<TViewModel, TView> : IViewModelDescriptor where TViewModel : ViewModel
 {

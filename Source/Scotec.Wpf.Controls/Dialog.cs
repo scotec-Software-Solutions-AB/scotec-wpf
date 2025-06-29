@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Scotec.Wpf.ViewModels;
+using System.Windows;
 
 namespace Scotec.Wpf.Controls;
 

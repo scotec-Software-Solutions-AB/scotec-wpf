@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scotec.Wpf;
+namespace Scotec.Wpf.ViewModels;
 
 /// <summary>
 ///     The view-model descriptor contains a mapping from a view-model to a associated view.

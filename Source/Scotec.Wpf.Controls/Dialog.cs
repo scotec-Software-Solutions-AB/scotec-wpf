@@ -6,12 +6,7 @@ namespace Scotec.Wpf.Controls;
 /// <summary>
 /// Represents a dialog control that is specialized for a specific type of window.
 /// </summary>
-/// <remarks>
-/// This class inherits from <see cref="Dialog{TWindow}" /> and provides additional functionality
-/// or customization for managing dialog windows. It is designed to simplify the creation and handling
-/// of dialogs in WPF applications.
-/// </remarks>
-public class Dialog<TWindow> : FrameworkElement where TWindow : Window, new()
+public abstract class Dialog<TWindow> : FrameworkElement where TWindow : Window, new()
 {
     private static readonly DependencyProperty IsDialogVisibleProperty =
         DependencyProperty.Register(nameof(IsDialogVisible), typeof(bool), typeof(Dialog<TWindow>),
@@ -90,6 +85,32 @@ public class Dialog<TWindow> : FrameworkElement where TWindow : Window, new()
     }
 
     /// <summary>
+    /// Invoked when the dialog window is about to close.
+    /// </summary>
+    /// <remarks>
+    /// This method provides a hook for derived classes to perform custom logic 
+    /// when the dialog window is closing. By default, it does nothing.
+    /// Override this method in a subclass to implement specific behavior.
+    /// </remarks>
+    protected virtual void OnWindowClosing()
+    {
+        // Nothing to do here.
+    }
+    
+    /// <summary>
+    /// Invoked when the dialog window is about to be shown.
+    /// </summary>
+    /// <remarks>
+    /// This method provides a hook for derived classes to perform custom logic 
+    /// when the dialog window is being displayed. By default, it does nothing.
+    /// Override this method in a subclass to implement specific behavior.
+    /// </remarks>
+    protected virtual void OnWindowShowing()
+    {
+        // Nothing to do here.
+    }
+
+    /// <summary>
     /// Closes the currently displayed dialog window, if any, and releases its resources.
     /// </summary>
     /// <remarks>
@@ -99,6 +120,8 @@ public class Dialog<TWindow> : FrameworkElement where TWindow : Window, new()
     /// </remarks>
     private void CloseWindow()
     {
+        OnWindowClosing();
+        
         _dialog?.Close();
         _dialog = null;
     }
@@ -124,6 +147,8 @@ public class Dialog<TWindow> : FrameworkElement where TWindow : Window, new()
             ContentTemplateSelector = Content?.DataTemplateSelector
         };
 
+        OnWindowShowing();
+        
         _dialog.ShowDialog();
     }
 }
